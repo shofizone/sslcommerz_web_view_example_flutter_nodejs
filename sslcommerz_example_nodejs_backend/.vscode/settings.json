@@ -1,0 +1,8 @@
+{
+    "activestate.recommendations.ignore.packages": [
+        
+    ],
+    "emmet.includeLanguages": {
+        "ejs": "html",
+    },
+}

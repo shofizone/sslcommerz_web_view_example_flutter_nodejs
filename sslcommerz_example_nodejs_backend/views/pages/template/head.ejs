@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Sheikh Shofiullah">
+    <title>Sslcommerz Payment Gateway Example</title>
+
+    <% let info = paymentInfo %>
+    <script type="text/javascript">
+        var info = '<%- info %>'
+    if (info) {
+      window.onload = function(){
+          invokeFlutterApp()
+      };
+      try {
+          function invokeFlutterApp() {
+              MessageInvoker.postMessage(info)
+          }
+      } catch (e) {
+          console.log(e)
+      }
+  }
+
+    </script>
+
+</head>
